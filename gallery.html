@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Image Gallery</h1>
+
+  <div class="gallery">
+    <img src="./assests/images/img1.jpeg" alt="Image 1" />
+    <img src="./assests/images/img2.jpeg" alt="Image 2" />
+    <img src="./assests/images/img3.jpeg" alt="Image 3" />
+    <img src="./assests/images/img4.jfif" alt="Image 4" />
+    <img src="./assests/images/img5.jfif" alt="Image 5" />
+    <img src="./assests/images/img6.jfif" alt="Image 6" />
+    <img src="./assests/images/img7.jpg" alt="Image 7" />
+    <img src="./assests/images/img8.jpg" alt="Image 8" />
+    <img src="./assests/images/img9.jpeg" alt="Image 9" />
+    <img src="./assests/images/img10.jpg" alt="Image 10" />
+    <img src="./assests/images/img11.jfif" alt="Image 11" />
+    <img src="./assests/images/img12.jfif" alt="Image 12" />
+    <img src="./assests/images/img13.jpeg" alt="Image 13" />
+    <img src="./assests/images/img14.jfif" alt="Image 14" />
+    <img src="./assests/images/img15.jfif" alt="Image 15" />
+    <img src="./assests/images/img16.jpeg" alt="Image 16" />
+    <img src="./assests/images/img17.jpeg" alt="Image 17" />
+    <img src="./assests/images/img18.jpeg" alt="Image 18" />
+    <img src="./assests/images/img19.jpeg" alt="Image 19" />
+    <img src="./assests/images/img20.jpeg" alt="Image 20" />
+    <img src="./assests/images/img21.jpeg" alt="Image 21" />
+    <img src="./assests/images/img22.jpeg" alt="Image 22" />
+    <img src="./assests/images/img23.jpg" alt="Image 23" />
+    <img src="./assests/images/img24.jpeg" alt="Image 24" />
+
+  </div>
+
+</body>
+</html>
+
