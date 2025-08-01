@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regsiter</title>
+
+    <style>
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        line-height: 1.6;
+        
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #333;
+        padding: 10px 30px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+      }
+
+      .navbar .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-right: 10px;
+        padding: 4px;
+        /* margin-left: 200px; */
+      }
+
+      .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .nav-links li a:hover {
+        color: #ffd700;
+      }
+
+      .logo img {
+        height: 40px;
+      }
+
+
+
+ .form-container {
+      background-color: #ffffff;
+      padding: 20px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      justify-content: center;
+      margin-top: 40px;
+      margin-left: 550px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+
+
+
+
+
+       footer {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 15px 0;
+        margin-top: 17px;
+      }
+
+    </style>
+</head>
+<body>
+    
+     <nav class="navbar">
+      <div class="logo">
+        <img src="./assests/images/logo.png" alt="College Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./gallery.html">gallery</a></li>
+        <li><a href="./register.html">Register</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+    </nav>
+
+
+
+
+    <div class="form-container">
+    <h2>Registration Form</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+       <label for="email">College Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="group">Group</label>
+      <input type="text" id="group" name="group" required />
+
+      <label for="year">Year</label>
+      <select id="year" name="year" required>
+        <option value="">Select Year</option>
+        <option value="1st Year">1st Year</option>
+        <option value="2nd Year">Final Year</option>
+      </select>
+
+      
+      <label for="sem">Sem</label>
+      <select id="sem" name="sem" required>
+        <option value="">Select your Semister</option>
+        <option value="1st sem">1st Sem</option>
+        <option value="2nd sem">2nd Sem</option>
+        <option value="3rd sem">3rd Sem</option>
+        <option value="4th sem">4th Sem</option>
+      </select>
+
+     
+
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+
+
+   <footer>
+      <p>&copy; 2025 Narayana Engineering College – MCA Department</p>
+    </footer>
+
+</body>
+</html>
