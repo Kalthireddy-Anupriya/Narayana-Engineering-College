@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        line-height: 1.6;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #333;
+        padding: 10px 30px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+      }
+
+      .navbar .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-right: 10px;
+        padding: 4px;
+        /* margin-left: 200px; */
+      }
+
+      .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .nav-links li a:hover {
+        color: #ffd700;
+      }
+
+      .logo img {
+        height: 40px;
+      }
+       /* Footer */
+      footer {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 15px 0;
+        margin-top: 40px;
+      }
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./assests/images/logo.png" alt="College Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="./gallery.html">gallery</a></li>
+        <li><a href="./register.html">Register</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+    </nav>
+     <h1 id="greeting"></h1>
+     <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Narayana Engineering College – MCA Department</p>
+    </footer>
+
+
+
+
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get("name");
+        document.getElementById("greeting").textContent = `${name} Welcome`;
+    </script>
+</body>
+</html>
